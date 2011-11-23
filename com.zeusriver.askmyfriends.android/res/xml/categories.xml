@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<services>
+		<category maincategory = "Home">
+			<sub subcategory = "Plumber"></sub>
+			<sub subcategory = "Hardwood Installer"></sub>
+			<sub subcategory = "General Contractor"></sub>
+			<sub subcategory = "Realestate Agent"></sub>
+			<sub subcategory = "Electrician"></sub>		
+			<sub subcategory = "Landscaper"></sub>															
+		</category>
+		<category maincategory = "Entertainment">
+			<sub subcategory = "DJ"></sub>
+			<sub subcategory = "Dance Instructor"></sub>														
+		</category>
+		<category maincategory = "Automobile">
+			<sub subcategory = "Car Mechanic"></sub>
+			<sub subcategory = "Alarm Mechanic"></sub>
+			<sub subcategory = "Tire Salesman"></sub>
+			<sub subcategory = "Autobody Mechanic"></sub>		
+		</category>
+		<category maincategory = "Health Care">
+			<sub subcategory = "Doctor"></sub>
+			<sub subcategory = "Dentist"></sub>
+			<sub subcategory = "Physiotherapist"></sub>
+		</category>
+		<category maincategory = "Finance">
+			<sub subcategory = "Tax Accountant"></sub>
+			<sub subcategory = "Business Accountant"></sub>
+			<sub subcategory = "Financial Accountant"></sub>		
+			<sub subcategory = "Mortgage Specialist"></sub>
+			<sub subcategory = "Home Insurance Specialist"></sub>
+			<sub subcategory = "Car Insurance Specialist"></sub>	
+		</category>
+		<category maincategory = "Personal">
+			<sub subcategory = "Hair Dresser"></sub>
+			<sub subcategory = "Mortgage Specialist"></sub>
+			<sub subcategory = "Insurance Specialist"></sub>
+		</category>
+		<category maincategory = "Technology">
+			<sub subcategory = "Mobile Developer"></sub>
+			<sub subcategory = "Web Developer"></sub>
+			<sub subcategory = "Network Specialist"></sub>
+		</category>
+		<category maincategory = "Education">
+			<sub subcategory = "Math Tutor"></sub>
+			<sub subcategory = "English Tutor"></sub>
+			<sub subcategory = "French Tutor"></sub>
+		</category>
+	</services>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+	android:cacheColorHint="#ffffff"
+    android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout1">
+    	<ImageButton android:id="@+id/topleftimage"
+    		android:src="@drawable/rricon64"
+        	android:background="@drawable/buttonchanger" 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:onClick="goHome"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+        	android:layout_alignParentTop="true"/>
+        	<View android:id="@+id/View01" 
+        		android:layout_width="1dip"
+        		android:layout_height="match_parent"
+        		android:background="@drawable/black_white_gradient"></View>
+ 		<TextView 
+ 			android:id="@+id/banner"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="12dp"
+        	android:textSize="20dp"
+        	android:textStyle="bold"
+        	android:textColor="#ffffff"
+        	android:gravity="center_vertical"
+        	android:text="Rate the Provider"
+			android:background="@drawable/gradient"/>
+    </LinearLayout>
+	<ScrollView
+		android:id="@+id/scrollview"
+		android:layout_below="@+id/linearLayout1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content">
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:padding="5dp" 
+        	android:weightSum="1">
+        	<LinearLayout 
+        		android:layout_width="fill_parent"
+        		android:paddingLeft="3dp"
+        		android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/contact_fullname"
+					android:textColor="#46523C"
+					android:textSize ="20dp"
+					android:textStyle="bold"
+					android:layout_weight="1"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"/>
+    		</LinearLayout>
+    		<LinearLayout
+        		android:layout_width="fill_parent"
+        		android:paddingLeft="3dp"
+        		android:layout_height="wrap_content">
+    			<TextView
+					android:id="@+id/category"
+					android:textSize="12dp"
+					android:textColor="#303030"
+					android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"/>
+    	 	</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:layout_width="fill_parent"
+        		android:paddingTop="10px"
+        		android:paddingBottom="5dp"
+        		android:paddingLeft="3dp"
+        		android:layout_height="fill_parent">	
+				<TextView style="@style/label" 
+					android:text="CUSTOMER SERVICE"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/customerservicerating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="false"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></RatingBar>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:paddingLeft="3dp"
+        		android:paddingBottom="5dp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent">	
+				<TextView style="@style/label" 
+					android:text="SPEED/EFFICIENCY"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/speedrating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="false"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				</RatingBar>
+			</LinearLayout>
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:paddingLeft="3dp"
+        		android:paddingBottom="5dp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent">	
+				<TextView style="@style/label" 
+					android:text="QUALITY"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/qualityrating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="false"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				</RatingBar>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:paddingLeft="3dp"         		
+        		android:paddingBottom="5dp"     		
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent">	
+				<TextView style="@style/label" 
+					android:text="PRICE/VALUE"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/pricerating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="false"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content">
+				</RatingBar>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent">
+			</LinearLayout>
+			<LinearLayout style="@style/line"
+				android:paddingTop="16dp"
+		    	android:layout_height="40dp"
+				android:layout_width="fill_parent">
+				<TextView style="@style/label" 
+					android:text="Review Details" 
+					android:textColor="#ffffff"
+					android:paddingLeft="3dp"
+					android:background="@drawable/gradient"
+					android:layout_width="match_parent"/>
+			</LinearLayout>
+    		<EditText
+   				android:id="@+id/message_entrytxtbox"
+    			android:textSize="18sp"
+    			android:gravity="top"
+    			android:layout_width="fill_parent"
+    			android:layout_height="120dp"/>
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+	    		android:layout_alignParentBottom="true">
+			</LinearLayout>	
+			<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/scrollview"
+		android:background="#ffffff"
+		android:layout_width="fill_parent">
+		<Button 
+			android:gravity="center" 
+			android:layout_height="50dp" 
+			android:text="Send" 
+			android:background="@drawable/gradient2" 
+			android:textStyle="bold" 
+			android:textSize="20dp" 
+			android:id="@+id/btnsendresponse" 
+			android:layout_width="100dp" 
+			android:textColor="#ffffff" 
+			android:layout_centerHorizontal="true"></Button>
+	</RelativeLayout>	
+		</LinearLayout>
+	</ScrollView>
+	
+</RelativeLayout>

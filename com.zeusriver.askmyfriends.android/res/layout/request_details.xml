@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#ffffff"
+	android:cacheColorHint="#ffffff"
+    android:layout_height="fill_parent">
+   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:layout_width="fill_parent"
+   	android:layout_height="wrap_content" 
+   	android:id="@+id/linearLayout1">
+   		<ImageButton android:id="@+id/topleftimage"
+   			android:src="@drawable/rricon64"
+       		android:background="@drawable/buttonchanger" 
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+			android:onClick="goHome"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+       		android:layout_alignParentTop="true"/>
+       	<View android:id="@+id/View01" 
+       		android:layout_width="1dip"
+       		android:layout_height="match_parent"
+       		android:background="@drawable/black_white_gradient"></View>
+ 		<TextView 
+ 			android:id="@+id/banner"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="12dp"
+        	android:textSize="20dp"
+        	android:textStyle="bold"
+        	android:textColor="#ffffff"
+        	android:gravity="center_vertical"
+        	android:text="View Request Details"
+			android:background="@drawable/gradient"/>
+    </LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_below="@+id/linearLayout1"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:padding="5dp" 
+        	android:weightSum="1">
+        	<LinearLayout 
+        		android:paddingLeft="3dp"
+        		android:paddingTop="5dp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+        		<ImageView 
+    				android:id="@+id/contactphoto"
+   					android:layout_width="50dp"
+    				android:layout_height="50dp"/>
+    			<RelativeLayout 
+    				android:paddingLeft="6dp"
+    				android:layout_width="fill_parent"
+    				android:layout_height="50dp">
+        		<TextView android:id="@+id/field_accountID" 
+        			android:text="FROMTest:" 
+        			android:focusable="false" 
+        			android:textSize="18dp" 
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:textColor="#000000" 
+        			android:layout_alignParentBottom="true" 
+        			android:layout_alignLeft="@+id/textView1"></TextView>
+        		<TextView android:id="@+id/textView1" 
+        		    android:paddingTop="8dp"
+        			android:text="FROM:" 
+        			android:textSize="13dp"
+        			android:layout_width="wrap_content" 
+        			android:layout_height="wrap_content" 
+        			android:textColor="#46523C" 
+        			android:layout_alignParentTop="true" 
+        			android:layout_alignParentLeft="true"></TextView>
+    				</RelativeLayout>
+        	</LinearLayout>
+			<LinearLayout 
+				android:paddingLeft="3dp"
+				android:paddingTop="15dp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">
+				<TextView
+					android:text="LOOKING FOR:"
+					android:textSize="13dp"
+        			android:textColor="#46523C"
+        			android:layout_height="wrap_content"
+					android:layout_width="wrap_content"/>
+			</LinearLayout>
+			<LinearLayout 
+				android:paddingLeft="3dp"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content">	
+				<TextView style="@style/edit_text"
+					android:id="@+id/message_headertxt"
+					android:focusable="false"
+					android:textColor="#000000"
+ 					android:textSize="16dp"
+ 					android:textStyle="bold"
+					android:layout_width="wrap_content"
+    				android:layout_height="wrap_content"/>
+    		</LinearLayout>
+    	<LinearLayout style="@style/line"
+			android:paddingTop="16dp"
+			android:layout_height="40dp"
+			android:layout_width="fill_parent">
+			<TextView style="@style/label" 
+				android:text="Request Details" 					
+				android:textColor="#ffffff"
+				android:paddingLeft="3dp"
+				android:background="@drawable/gradient"
+				android:layout_width="match_parent"/>
+			</LinearLayout>
+	 	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" 
+			android:paddingLeft="3dp"
+			android:paddingTop="5dp"
+			android:layout_height="227dp">
+    		<TextView
+   				android:id="@+id/message_entrytxtbox"
+    			android:textSize="18sp"
+    			android:textColor="#000000"
+    			android:focusable="false"
+    			android:layout_width="fill_parent" android:layout_height="208dp"/>
+    	</LinearLayout>
+		</LinearLayout>
+	<Button android:id="@+id/btnconfirm" android:layout_width="200dp" android:gravity="center" android:textSize="20dp" android:onClick="referContact" android:layout_height="50dp" android:background="@drawable/gradient2" android:text="Refer a Contact" android:textColor="#ffffff" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:layout_marginBottom="19dp"></Button>
+</RelativeLayout>

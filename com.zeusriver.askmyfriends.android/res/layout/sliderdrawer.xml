@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical" 
+	android:gravity="bottom">
+	<LinearLayout
+		android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+		<LinearLayout style="@style/line2">
+			<TextView style="@style/label"
+				android:text="Name:"
+				android:layout_width="20dp"/>
+				<EditText style="@style/edit_text"
+					android:id="@+id/contact_fullname"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+	    			android:layout_height="wrap_content"/>
+    	</LinearLayout>  	 	
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content">		
+			<TextView style="@style/label" 
+				android:text="CUSTOMER SERVICE"
+				android:paddingLeft="3dip"
+				android:paddingTop="0dp"
+				android:layout_width="wrap_content"/>
+        	<RatingBar android:id="@+id/customerservicerating"
+        		style="?android:attr/ratingBarStyleSmall"
+				android:isIndicator="true"
+				android:stepSize="0.5"
+				android:numStars="5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></RatingBar>
+		</LinearLayout>
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        	android:orientation="vertical"
+        	android:layout_width="fill_parent" 
+        	android:layout_height="wrap_content">	
+			<TextView style="@style/label" 
+				android:text="SPEED/EFFICIENCY"
+				android:paddingLeft="3dip"
+				android:layout_width="wrap_content"/>
+        	<RatingBar android:id="@+id/speedrating"
+        		style="?android:attr/ratingBarStyleSmall"		
+				android:isIndicator="true"
+				android:stepSize="0.5"
+				android:numStars="5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></RatingBar>
+			</LinearLayout>
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:layout_width="fill_parent" 
+        		android:layout_height="wrap_content">	
+				<TextView style="@style/label" 
+					android:text="QUALITY"
+					android:paddingLeft="3dip"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/qualityrating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="true"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></RatingBar>
+			</LinearLayout>
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        		android:orientation="vertical"
+        		android:layout_width="fill_parent" 
+        		android:layout_height="wrap_content">	
+				<TextView style="@style/label" 
+					android:text="PRICE/VALUE"
+					android:paddingLeft="3dip"
+					android:layout_width="wrap_content"/>
+        		<RatingBar android:id="@+id/pricerating"
+        			style="?android:attr/ratingBarStyleSmall"
+					android:isIndicator="true"
+					android:stepSize="0.5"
+					android:numStars="5"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"></RatingBar>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<Button android:text="Add to Contacts" android:layout_height="50dp" android:layout_width="170dp" android:textStyle="bold" android:background="@drawable/gradient2" android:id="@+id/btnaddcontact" android:textColor="#ffffff" android:gravity="center" android:textSize="20dp"></Button>
+			</LinearLayout>	
+		
+    </LinearLayout>
+    <SlidingDrawer android:id="@+id/slidingDrawer1" 
+    	android:layout_width="wrap_content" 
+    	android:handle="@+id/handle" 
+    	android:content="@+id/content" 
+    	android:layout_height="240dp">
+    	<RelativeLayout
+    		android:layout_width="fill_parent"
+            android:id="@+id/handle" 
+            android:layout_height="238dp">
+        	<ImageView android:src="@drawable/okicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" android:id="@+id/imageView1"/>
+        	
+        </RelativeLayout>
+        <LinearLayout android:id="@+id/content" 
+        	android:layout_width="match_parent" 
+        	android:layout_height="100dp">
+        	<TextView 
+        		android:layout_width="match_parent" 
+        		android:layout_height="wrap_content"
+        		android:text="Test"/>
+        </LinearLayout>
+    </SlidingDrawer>
+    
+</FrameLayout>

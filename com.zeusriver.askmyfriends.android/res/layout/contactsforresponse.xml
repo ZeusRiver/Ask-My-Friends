@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffff">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout1">
+    	<ImageButton android:id="@+id/topleftimage"
+    		android:src="@drawable/rricon64"
+        	android:background="@drawable/buttonchanger" 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:onClick="goHome"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+        	android:layout_alignParentTop="true"/>
+        	<View android:id="@+id/View01" 
+        		android:layout_width="1dip"
+        		android:layout_height="match_parent"
+        		android:background="@drawable/black_white_gradient"></View>
+ 		<TextView 
+ 			android:id="@+id/banner"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="12dp"
+        	android:textSize="20dp"
+        	android:textStyle="bold"
+        	android:textColor="#ffffff"
+        	android:gravity="center_vertical"
+        	android:text="Choose a Provider"
+			android:background="@drawable/gradient"/>
+    </LinearLayout>
+	<LinearLayout android:id="@+id/listlin"
+		android:layout_width="fill_parent"
+		android:layout_below="@+id/linearLayout1"
+		android:layout_height="wrap_content">
+  		<ListView
+  			android:id="@android:id/list"
+  			android:cacheColorHint="#ffffff"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentTop="true"
+			android:layout_weight="1.0"/>
+      </LinearLayout>
+      <LinearLayout
+		android:id="@+id/test"
+		android:background="@null"
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<Button
+      		android:id="@+id/next"
+      		android:textStyle="bold"
+      		android:textSize="20dp"
+      		android:textColor="#ffffff"
+      		android:background="@null"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"/>
+	   </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/gradient3"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:paddingBottom="20dp"
+    	android:id="@+id/linearLayout1">
+    	<ImageButton android:id="@+id/topleftimage"
+    		android:src="@drawable/rricon64"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+			android:background="@drawable/gradient"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+        	android:layout_alignParentTop="true"/>
+        	<View android:id="@+id/View01" 
+        		android:layout_width="1dip"
+        		android:layout_height="match_parent"
+        		android:background="@drawable/black_white_gradient"></View>
+ 		<TextView 
+ 			android:id="@+id/banner"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="12dp"
+        	android:textSize="25dp"
+        	android:textStyle="bold"
+        	android:textColor="#ffffff"
+        	android:gravity="center_vertical"
+        	android:text="Ask My Friends"
+			android:background="@drawable/gradient"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="50dp"
+    	android:layout_below="@+id/linearLayout1"
+    	android:background="@null"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:id="@+id/linearLayout2"> 
+    	<TextView
+    		android:layout_width="fill_parent"
+    		android:layout_height="50dp"
+    		android:gravity="center"
+    		android:textColor="#909090"
+    		android:textSize="15dp"
+    		></TextView>  	
+     </LinearLayout>
+        <TextView android:id="@+id/editText4" 
+        	android:background="@null"
+        	android:textColor="#ffffff"
+       		android:layout_width="40dp" 
+       		android:focusable="false" 
+       		android:layout_height="match_parent" 
+       		android:inputType="number" 
+       		android:gravity="center" 
+       		android:layout_alignLeft="@+id/Button02" 
+       		android:layout_alignBottom="@+id/Button02" 
+       		android:layout_alignTop="@+id/Button02">
+        </TextView>
+        <Button android:textSize="20dp" android:text="View Referrals" android:id="@+id/Button02" android:background="@drawable/gradient2" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="50dp" android:textColor="#ffffff" android:onClick="viewReferrals" android:layout_centerVertical="true" android:layout_alignRight="@+id/button1" android:layout_alignLeft="@+id/button1"></Button>
+        <Button android:textSize="20dp" android:text="Make a Referral" android:id="@+id/Button01" android:background="@drawable/gradient2" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="50dp" android:textColor="#ffffff" android:onClick="makeAreferral" android:layout_below="@+id/editText4" android:layout_marginTop="18dp" android:layout_alignRight="@+id/Button02" android:layout_alignLeft="@+id/editText4"></Button>
+        <Button android:text="Ask Friends" android:textStyle="bold" android:id="@+id/button1" android:textColor="#ffffff" android:background="@drawable/gradient2" android:textSize="20dp" android:onClick="askFriends" android:layout_height="50dp" android:layout_width="match_parent" android:layout_above="@+id/editText4" android:layout_alignLeft="@+id/linearLayout2" android:layout_marginBottom="18dp" android:layout_alignRight="@+id/linearLayout2"></Button>
+        <TextView 
+        	android:layout_width="40dp" 
+        	android:id="@+id/TextView01"
+        	android:layout_height="40dp" 
+        	android:textColor="#ffffff"
+        	android:textSize="13dp"
+        	android:background="@drawable/circle_white2" 
+        	android:gravity="center"
+        	android:focusable="false" 
+        	android:layout_marginTop="5dp"
+        	android:layout_marginLeft="5dp"
+        	android:layout_alignTop="@+id/Button01" 
+        	android:layout_alignLeft="@+id/Button01"></TextView>
+        <TextView 
+        	android:layout_width="40dp" 
+        	android:gravity="center" 
+        	android:id="@+id/responses"
+        	android:textColor="#ffffff"
+        	android:textSize="13dp" 
+        	android:layout_height="40dp" 
+        	android:background="@drawable/circle_white2" 
+        	android:focusable="false" 
+        	android:layout_centerVertical="true" 
+        	android:layout_alignLeft="@+id/TextView01"></TextView>
+</RelativeLayout>

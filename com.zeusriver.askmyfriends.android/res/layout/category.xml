@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:background="#ffffff"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+   	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/linearLayout1">
+    	<ImageButton android:id="@+id/topleftimage"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/rricon64"
+        	android:background="@drawable/buttonchanger"      	
+			android:onClick="goHome"
+			android:paddingLeft="5dp"
+			android:paddingRight="10dp"
+        	android:layout_alignParentTop="true"/>
+        	<View android:id="@+id/View01" 
+        		android:layout_width="1dip"
+        		android:layout_height="match_parent"
+        		android:background="@drawable/black_white_gradient"></View>
+ 		<TextView 
+ 			android:id="@+id/banner"
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="12dp"
+        	android:textSize="20dp"
+        	android:textStyle="bold"
+        	android:textColor="#ffffff"
+        	android:gravity="center_vertical"
+        	android:text="Select a Provider Type"
+			android:background="@drawable/gradient"/>
+    </LinearLayout>
+	<ExpandableListView android:id="@id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:cacheColorHint="#ffffff"
+		android:drawSelectorOnTop="false"/>
+		<TextView android:id="@+id/selectedcategory"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#FF0000"
+			android:text="No data"/>
+</LinearLayout>
